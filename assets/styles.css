@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-card input[type="checkbox"] {
+  display: none;
+}
+
+.user-card input[type="checkbox"]:checked ~ .user-info {
+  display: block;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.user-info {
+  display: none;
+  margin-top: 10px;
+}
+
+.user-card .label {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.user-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.user-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .user-card {
+    width: 100%;
+  }
+}

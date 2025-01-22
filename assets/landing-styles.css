@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: white;
+  text-align: center;
+}
+
+.landing {
+  padding: 80px 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-content {
+  max-width: 800px;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.landing .btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.landing .btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
